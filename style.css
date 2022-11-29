@@ -1,0 +1,12 @@
+@tailwind base;
+@tailwind components;
+
+.fitems {
+  @apply focus:underline decoration-2 focus:underline-offset-4 cursor-pointer text-[16px] px-3;
+}
+
+.show {
+  @apply block;
+}
+
+@tailwind utilities;
