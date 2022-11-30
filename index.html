@@ -1,4 +1,5 @@
 <!-- https://wweverma1.github.io/index.html -->
+<!-- https://elementor.com/library/template-kit/cv-portfolio/preview/ -->
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -8,45 +9,77 @@
     <title>Jai Marothiya</title>
     <link rel="stylesheet" href="./style.css" />
     <link rel="icon" type="image/x-icon" href="/image/favicon.ico" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;500;700&display=swap"
+      rel="stylesheet"
+    />
   </head>
-  <body class="bg-slate-50">
-    <div class="w-full shadow-md bg-slate-100">
+  <body class="bg-[#0F363D]">
+    <div class="w-full bg-[#0F363D]">
       <div
         class="navbar flex justify-between items-center px-2 py-1 laptop:px-4 max-w-[88vw] mx-auto"
       >
-        <div class="flex justify-between w-full laptop:order-2 laptop:hidden">
-          <div class="search laptop:hidden w-14 py-4 px-auto">
-            <img src="./image/logo.png" alt="" />
+        <div class="flex justify-between w-full laptop:hidden">
+          <div class="search laptop:hidden py-4">
+            <div class="flex">
+              <img
+                class="rounded-full w-12 h-12"
+                src="./image/my_photo.jpg"
+                alt=""
+              />
+              <div class="pl-4 w-fit">
+                <h1 class="text-white text-xl font-sans">Jai Marothiya</h1>
+                <p class="text-white text-sm font-[Inter]">
+                  Full Stack Developer
+                </p>
+              </div>
+            </div>
+            <div class="hidden toggle">
+              <ul class="px-0 py-4 w-fit">
+                <li>
+                  <a href="#home-section" class="fitems py-4 px-0">Home</a>
+                </li>
+                <li><a href="#" class="fitems py-4 px-0">About</a></li>
+                <li><a href="#" class="fitems py-4 px-0">Education</a></li>
+                <li>
+                  <a href="#" class="fitems py-4 px-0">Courses & Skills</a>
+                </li>
+                <li><a href="#" class="fitems py-4 px-0">Projects</a></li>
+                <li><a href="#" class="fitems py-4 px-0">Contact</a></li>
+              </ul>
+            </div>
           </div>
           <div class="flex flex-col">
             <div
               class="hamburger inline-block py-5 float-right pl-28 cursor-pointer laptop:hidden"
             >
-              <div class="line h-0.5 w-6 my-1 bg-black"></div>
-              <div class="line h-0.5 w-6 my-1 bg-black"></div>
-              <div class="line h-0.5 w-6 my-1 bg-black"></div>
-            </div>
-            <div class="hidden toggle">
-              <ul>
-                <li><a href="#" class="fitems">Home</a></li>
-                <li><a href="#" class="fitems">About</a></li>
-                <li><a href="#" class="fitems">Education</a></li>
-                <li><a href="#" class="fitems">Courses & Skills</a></li>
-                <li><a href="#" class="fitems">Projects</a></li>
-                <li><a href="#" class="fitems">Contact</a></li>
-              </ul>
+              <div class="line h-0.5 w-6 my-1 bg-white"></div>
+              <div class="line h-0.5 w-6 my-1 bg-white"></div>
+              <div class="line h-0.5 w-6 my-1 bg-white"></div>
             </div>
           </div>
         </div>
 
         <div class="logo hidden laptop:flex text-center justify-between w-full">
-          <div class="py-3 w-16 hidden laptop:block">
-            <img src="./image/logo.png" alt="" />
+          <div class="py-3 w-fit hidden laptop:block">
+            <div class="flex flex-wrap">
+              <img
+                class="rounded-full w-14 h-14"
+                src="./image/my_photo.jpg"
+                alt=""
+              />
+              <div class="pl-4 w-fit">
+                <h1 class="text-white text-xl font-sans">Jai Marothiya</h1>
+                <p class="text-white text-sm font-[Inter]">
+                  Full Stack Developer
+                </p>
+              </div>
+            </div>
           </div>
           <div
             class="hidden features absolute w-fit laptop:w-auto laptop:static laptop:flex items-center justify-between mx-4 space-x-2"
           >
-            <a href="#" class="fitems">Home</a>
+            <a href="#home-section" class="fitems">Home</a>
             <a href="#" class="fitems">About</a>
             <a href="#" class="fitems">Education</a>
             <a href="#" class="fitems">Courses & Skills</a>
@@ -55,6 +88,29 @@
           </div>
         </div>
       </div>
+      <hr class="h-[0.25px] border-black" />
+    </div>
+
+    <div class="home max-w-[88vw] mx-auto" id="home-section">
+      <div class="mt-28 mx-8">
+        <h1
+          class="text-4xl tablet:text-6xl py-3 font-[Inter] font-extrabold text-white text-center"
+        >
+          WELCOME, I'M
+        </h1>
+        <h1
+          class="text-4xl tablet:text-6xl leading-relaxed font-[Inter] py-3 font-extrabold text-white text-center"
+        >
+          JAI MAROTHIYA
+        </h1>
+        <hr class="my-3" />
+        <p
+          class="text-2xl font-[Inter] font-medium text-white text-center tablet:py-6"
+        >
+          I'm a Full Stack Web Developer
+        </p>
+      </div>
+      <div></div>
     </div>
 
     <script src="./js/navbar.js"></script>

@@ -2,7 +2,7 @@
 @tailwind components;
 
 .fitems {
-  @apply focus:underline decoration-2 focus:underline-offset-4 cursor-pointer text-[16px] px-3;
+  @apply laptop:focus:underline focus:text-[#daa49c] decoration-1 focus:underline-offset-4 cursor-pointer text-[15px] text-white px-3 my-4 font-[Inter] font-light;
 }
 
 .show {
