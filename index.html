@@ -7,17 +7,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Jai Marothiya</title>
-    <link rel="stylesheet" href="../My-portfolio/style.css" />
+    <link rel="stylesheet" href="./style.css" />
     <link rel="icon" type="image/x-icon" href="/image/favicon.ico" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;500;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;500;700&display=swap"
       rel="stylesheet"
     />
   </head>
   <body class="bg-[#0F363D]">
     <div class="w-full bg-[#0F363D]">
       <div
-        class="navbar flex justify-between items-center px-2 py-1 laptop:px-4 max-w-[88vw] mx-auto"
+        class="navbar flex justify-between items-center px-2 py-1 laptop:px-4 max-w-[88vw] mx-auto z-20"
       >
         <div class="flex justify-between w-full laptop:hidden">
           <div class="search laptop:hidden py-4">
@@ -37,15 +37,31 @@
             <div class="hidden toggle">
               <ul class="px-0 py-4 w-fit">
                 <li>
-                  <a href="#home-section" class="fitems py-4 px-0">Home</a>
+                  <a href="./index.html" class="fitems py-4 px-0 text-[#daa49c]"
+                    >Home</a
+                  >
                 </li>
-                <li><a href="#" class="fitems py-4 px-0">About</a></li>
-                <li><a href="#" class="fitems py-4 px-0">Education</a></li>
                 <li>
-                  <a href="#" class="fitems py-4 px-0">Courses & Skills</a>
+                  <a href="./About.html" class="fitems py-4 px-0">About</a>
                 </li>
-                <li><a href="#" class="fitems py-4 px-0">Projects</a></li>
-                <li><a href="#" class="fitems py-4 px-0">Contact</a></li>
+                <li>
+                  <a href="./Education.html" class="fitems py-4 px-0"
+                    >Education</a
+                  >
+                </li>
+                <li>
+                  <a href="./Courses.html" class="fitems py-4 px-0"
+                    >Courses & Skills</a
+                  >
+                </li>
+                <li>
+                  <a href="./Projects.html" class="fitems py-4 px-0"
+                    >Projects</a
+                  >
+                </li>
+                <li>
+                  <a href="./contact.html" class="fitems py-4 px-0">Contact</a>
+                </li>
               </ul>
             </div>
           </div>
@@ -79,12 +95,16 @@
           <div
             class="hidden features absolute w-fit laptop:w-auto laptop:static laptop:flex items-center justify-between mx-4 space-x-2"
           >
-            <a href="#home-section" class="fitems">Home</a>
-            <a href="#" class="fitems">About</a>
-            <a href="#" class="fitems">Education</a>
-            <a href="#" class="fitems">Courses & Skills</a>
-            <a href="#" class="fitems">Projects</a>
-            <a href="#" class="fitems">Contact</a>
+            <a
+              href="./index.html"
+              class="fitems text-[#daa49c] underline underline-offset-4"
+              >Home</a
+            >
+            <a href="./About.html" class="fitems">About</a>
+            <a href="./Education.html" class="fitems">Education</a>
+            <a href="./Courses.html" class="fitems">Courses & Skills</a>
+            <a href="./Projects.html" class="fitems">Projects</a>
+            <a href="./contact.html" class="fitems">Contact</a>
           </div>
         </div>
       </div>
@@ -96,10 +116,10 @@
         <h1
           class="text-4xl tablet:text-6xl py-3 font-[Inter] font-extrabold text-white text-center"
         >
-          WELCOME, I'M
+          WELCOME<span class="text-[#daa49c]">, I'M</span>
         </h1>
         <h1
-          class="text-4xl tablet:text-6xl leading-relaxed font-[Inter] py-3 font-extrabold text-white text-center"
+          class="text-4xl tablet:text-6xl leading-relaxed font-[Inter] py-3 font-extrabold text-[#daa49c] text-center"
         >
           JAI MAROTHIYA
         </h1>
@@ -107,12 +127,16 @@
         <p
           class="text-2xl font-[Inter] font-medium text-white text-center tablet:py-6"
         >
-          I'm a Full Stack Web Developer
+          I'm a
+          <span
+            class="intro text-2xl font-[Inter] font-medium text-[#daa49c] text-center tablet:py-6"
+          ></span>
         </p>
       </div>
       <div></div>
     </div>
 
     <script src="./js/navbar.js"></script>
+    <script src="./js/home.js"></script>
   </body>
 </html>
